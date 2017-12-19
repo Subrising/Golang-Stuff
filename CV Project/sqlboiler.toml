@@ -1,0 +1,7 @@
+[postgres]
+dbname      =   "postgres"
+user        =   "user"
+pass        =   "password"
+host        =   "192.168.99.100"
+port        =   5432
+sslmode     =   "disable"

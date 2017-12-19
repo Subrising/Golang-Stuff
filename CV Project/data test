@@ -1,0 +1,346 @@
+var input = []byte(`
+{
+  "labelAnnotations": [
+    {
+      "mid": "/m/0h8ls87",
+      "description": "Automotive Exterior",
+      "score": 73
+    },
+    {
+      "mid": "/m/01jwgf",
+      "description": "Product",
+      "score": 71
+    },
+    {
+      "mid": "/m/02csf",
+      "description": "Drawing",
+      "score": 65
+    },
+    {
+      "mid": "/m/02mnkq",
+      "description": "Bumper",
+      "score": 64
+    },
+    {
+      "mid": "/m/0919rx",
+      "description": "Line Art",
+      "score": 56
+    },
+    {
+      "mid": "/m/07yv9",
+      "description": "Vehicle",
+      "score": 52
+    },
+    {
+      "mid": "/m/05h7rm",
+      "description": "Coloring Book",
+      "score": 51
+    },
+    {
+      "mid": "/m/03scnj",
+      "description": "Line",
+      "score": 51
+    }
+  ],
+  "textAnnotations": [
+    {
+      "locale": "en",
+      "description": "For more step by step drawing tutorials visit us at www.drawingtutorialslol.com\n",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 128,
+            "y": 541
+          },
+          {
+            "x": 667,
+            "y": 541
+          },
+          {
+            "x": 667,
+            "y": 559
+          },
+          {
+            "x": 128,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "For",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 128,
+            "y": 541
+          },
+          {
+            "x": 147,
+            "y": 541
+          },
+          {
+            "x": 147,
+            "y": 559
+          },
+          {
+            "x": 128,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "more",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 154,
+            "y": 541
+          },
+          {
+            "x": 188,
+            "y": 541
+          },
+          {
+            "x": 188,
+            "y": 559
+          },
+          {
+            "x": 154,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "step",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 194,
+            "y": 541
+          },
+          {
+            "x": 221,
+            "y": 541
+          },
+          {
+            "x": 221,
+            "y": 559
+          },
+          {
+            "x": 194,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "by",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 228,
+            "y": 541
+          },
+          {
+            "x": 241,
+            "y": 541
+          },
+          {
+            "x": 241,
+            "y": 559
+          },
+          {
+            "x": 228,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "step",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 247,
+            "y": 541
+          },
+          {
+            "x": 273,
+            "y": 541
+          },
+          {
+            "x": 273,
+            "y": 559
+          },
+          {
+            "x": 247,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "drawing",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 279,
+            "y": 541
+          },
+          {
+            "x": 331,
+            "y": 541
+          },
+          {
+            "x": 331,
+            "y": 559
+          },
+          {
+            "x": 279,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "tutorials",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 338,
+            "y": 541
+          },
+          {
+            "x": 394,
+            "y": 541
+          },
+          {
+            "x": 394,
+            "y": 559
+          },
+          {
+            "x": 338,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "visit",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 400,
+            "y": 541
+          },
+          {
+            "x": 425,
+            "y": 541
+          },
+          {
+            "x": 425,
+            "y": 559
+          },
+          {
+            "x": 400,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "us",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 431,
+            "y": 541
+          },
+          {
+            "x": 446,
+            "y": 541
+          },
+          {
+            "x": 446,
+            "y": 559
+          },
+          {
+            "x": 431,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "at",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 452,
+            "y": 541
+          },
+          {
+            "x": 462,
+            "y": 541
+          },
+          {
+            "x": 462,
+            "y": 559
+          },
+          {
+            "x": 452,
+            "y": 559
+          }
+        ]
+      }
+    },
+    {
+      "description": "www.drawingtutorialslol.com",
+      "boundingPoly": {
+        "vertices": [
+          {
+            "x": 468,
+            "y": 541
+          },
+          {
+            "x": 667,
+            "y": 541
+          },
+          {
+            "x": 667,
+            "y": 559
+          },
+          {
+            "x": 468,
+            "y": 559
+          }
+        ]
+      }
+    }
+  ],
+  "cropHintsAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 799
+            },
+            {
+              "x": 799,
+              "y": 562
+            },
+            {
+              "y": 562
+            }
+          ]
+        },
+        "confidence": 0.79999995,
+        "importanceFraction": 1
+      }
+    ]
+}`)
